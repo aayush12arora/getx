@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
+import 'helper/init_controllers.dart';
 import 'my_home_page.dart';
 
 void main() {
@@ -14,6 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialBinding: InitializeControllers(),
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.

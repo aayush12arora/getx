@@ -10,14 +10,15 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var nametext= TextEditingController();
-    TapController tapController = Get.put(TapController());
-    AdController adController = Get.put(AdController());
+    TapController tapController = Get.find();
+    AdController adController = Get.find();
     return Scaffold(
       body: Container(
         height: double.maxFinite,
         width: double.maxFinite,
         child: SingleChildScrollView(
           child: Column(
+            //
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
 
